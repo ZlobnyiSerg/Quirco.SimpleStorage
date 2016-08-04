@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package >
+    <metadata>
+        <id>Quirco.SimpleStorage</id>
+        <iconUrl>https://cdn0.iconfinder.com/data/icons/fatcow/32/application_from_storage.png</iconUrl>
+        <version>1.0.0-pre1</version>
+        <authors>Quirco</authors>
+        <owners>Quirco</owners>
+		<projectUrl>https://github.com/ZlobnyiSerg/Quirco.SimpleStorage</projectUrl>
+        <licenseUrl>https://github.com/ZlobnyiSerg/Quirco.SimpleStorage/blob/master/LICENSE</licenseUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>Simple platform independent key/value storage for iOS and Android (Xamarin). PCL implementation.</description>
+        <copyright>Copyright 2016 Quirco</copyright>
+        <tags>storage persistence preferences key value serialization ios android xamarin pcl</tags>
+        <dependencies>
+            <dependency id="Newtonsoft.Json" version="9.0.1" />
+        </dependencies>
+    </metadata>
+    <files>
+        <file src="../output/Quirco.SimpleStorage.Android.dll" target="lib\MonoAndroid" />
+        <file src="../output/Quirco.SimpleStorage.iOS.dll" target="lib\Xamarin.iOS10" />
+        <file src="../output/Quirco.SimpleStorage.dll" target="lib\net45" />
+    </files>
+</package>
