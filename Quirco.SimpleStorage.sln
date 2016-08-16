@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quirco.SimpleStorage.Androi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quirco.SimpleStorage.iOS", "Quirco.SimpleStorage.iOS\Quirco.SimpleStorage.iOS.csproj", "{E1B8001A-765F-4F96-9F05-383AA4F37372}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quirco.SimpleStorage.Tests", "Quirco.SimpleStorage.Tests\Quirco.SimpleStorage.Tests.csproj", "{9ACA19B5-D393-4F95-A73B-21DAEA93A3FB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{E1B8001A-765F-4F96-9F05-383AA4F37372}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E1B8001A-765F-4F96-9F05-383AA4F37372}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E1B8001A-765F-4F96-9F05-383AA4F37372}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9ACA19B5-D393-4F95-A73B-21DAEA93A3FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9ACA19B5-D393-4F95-A73B-21DAEA93A3FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9ACA19B5-D393-4F95-A73B-21DAEA93A3FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9ACA19B5-D393-4F95-A73B-21DAEA93A3FB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

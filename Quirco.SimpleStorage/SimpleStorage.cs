@@ -48,14 +48,8 @@ namespace Quirco.SimpleStorage
             var data = Get(key);
             if (data == null)
                 return default(T);
-            try
-            {
-                return DeserializeObject<T>(data);
-            }
-            catch (Exception)
-            {
-                return default(T);
-            }
+
+            return DeserializeObject<T>(data);           
         }
 
         /// <summary>
@@ -82,14 +76,24 @@ namespace Quirco.SimpleStorage
 
         #region Helper methods
 
+        private static readonly JsonSerializerSettings SerializerSettings = new JsonSerializerSettings
+        {
+            ReferenceLoopHandling = ReferenceLoopHandling.Serialize,
+            PreserveReferencesHandling = PreserveReferencesHandling.Objects,
+            NullValueHandling = NullValueHandling.Ignore,
+            FloatParseHandling = FloatParseHandling.Decimal,
+            MissingMemberHandling = MissingMemberHandling.Ignore,
+            TypeNameHandling = TypeNameHandling.All
+        };
+
         protected virtual string SerializeObject<T>(T o)
         {
-            return JsonConvert.SerializeObject(o);
+            return JsonConvert.SerializeObject(o, SerializerSettings);
         }
 
         protected virtual T DeserializeObject<T>(string str)
         {
-            return JsonConvert.DeserializeObject<T>(str);
+            return JsonConvert.DeserializeObject<T>(str, SerializerSettings);
         }
 
         #endregion
